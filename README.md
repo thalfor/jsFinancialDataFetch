@@ -311,5 +311,5 @@ Results:<br />
 }
 ```
 
-As you can see the "chart" option is much much much more complete, however it takes a extra effort to manip the data.<br />
+As you can see the "chart" option is much much much more complete having all historical data and more information such as dividends, however it takes a extra effort to manip the data.<br />
 

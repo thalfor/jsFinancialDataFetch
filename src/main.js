@@ -32,12 +32,12 @@ async function getBrazilStockData(symbol) {
 //  const result = await yahooFinance.historical(symbol, queryOptions);
 
 // using chart
-  const queryOptions = { period1: '2024-12-01', return: "object", };
+  const queryOptions = { period1: '2024-01-01', return: "object", };
   const result = await yahooFinance.chart(symbol, queryOptions);
 
   //console.log(result);
-  //console.log(result.indicators);
-  console.log(result.indicators.quote[0]);
+  console.log(result.events);
+  //console.log(result.indicators.quote[0]);
 
 }
 
