@@ -35,6 +35,8 @@ async function getBrazilStockData(symbol) {
   const queryOptions = { period1: '2024-12-01', return: "object", };
   const result = await yahooFinance.chart(symbol, queryOptions);
 
+  //console.log(result);
+  //console.log(result.indicators);
   console.log(result.indicators.quote[0]);
 
 }
