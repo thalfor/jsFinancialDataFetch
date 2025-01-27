@@ -18,20 +18,20 @@ This metadata follows specific codes for each indicator avaiable, here they are 
 - Interest Rates<br />
 
   - Taxa de Juros:<br />
-https://dadosabertos.bcb.gov.br/dataset/11-taxa-de-juros---selic/resource/b73edc07-bbac-430c-a2cb-b1639e605fa8<br />
-https://api.bcb.gov.br/dados/serie/bcdata.sgs.11/dados?formato=json&dataInicial=01/01/2024&dataFinal=01/01/2025<br />
+    - website: https://dadosabertos.bcb.gov.br/dataset/11-taxa-de-juros---selic/resource/b73edc07-bbac-430c-a2cb-b1639e605fa8<br />
+    - api example: https://api.bcb.gov.br/dados/serie/bcdata.sgs.11/dados?formato=json&dataInicial=01/01/2024&dataFinal=01/01/2025<br />
   - Taxa de Juros anualizada base 252:<br />
-https://dadosabertos.bcb.gov.br/dataset/1178-taxa-de-juros---selic-anualizada-base-252/resource/e7fe6edb-d6c3-49b1-a7ef-6e0e98b63270<br />
-https://api.bcb.gov.br/dados/serie/bcdata.sgs.1178/dados?formato=json&dataInicial=01/01/2024&dataFinal=01/01/2025<br />
+    - website: https://dadosabertos.bcb.gov.br/dataset/1178-taxa-de-juros---selic-anualizada-base-252/resource/e7fe6edb-d6c3-49b1-a7ef-6e0e98b63270<br />
+    - api example: https://api.bcb.gov.br/dados/serie/bcdata.sgs.1178/dados?formato=json&dataInicial=01/01/2024&dataFinal=01/01/2025<br />
   - Taxa de Juros acumulada no mês:<br />
-https://dadosabertos.bcb.gov.br/dataset/4390-taxa-de-juros---selic-acumulada-no-mes/resource/449efbb5-366b-4907-820f-8143a63733e1<br />
-https://api.bcb.gov.br/dados/serie/bcdata.sgs.4390/dados?formato=json&dataInicial=01/01/2024&dataFinal=01/01/2025<br />
+    - website: https://dadosabertos.bcb.gov.br/dataset/4390-taxa-de-juros---selic-acumulada-no-mes/resource/449efbb5-366b-4907-820f-8143a63733e1<br />
+    - api example: https://api.bcb.gov.br/dados/serie/bcdata.sgs.4390/dados?formato=json&dataInicial=01/01/2024&dataFinal=01/01/2025<br />
   - Taxa de Juros acumulada no mês anualizada base 252:<br />
-https://dadosabertos.bcb.gov.br/dataset/4189-taxa-de-juros---selic-acumulada-no-mes-anualizada-base-252/resource/091e3cb3-4dca-488b-a89d-6c9bb56c9a99<br />
-https://api.bcb.gov.br/dados/serie/bcdata.sgs.4189/dados?formato=json&dataInicial=01/01/2024&dataFinal=01/01/2025<br />
+    - website: https://dadosabertos.bcb.gov.br/dataset/4189-taxa-de-juros---selic-acumulada-no-mes-anualizada-base-252/resource/091e3cb3-4dca-488b-a89d-6c9bb56c9a99<br />
+    - api example: https://api.bcb.gov.br/dados/serie/bcdata.sgs.4189/dados?formato=json&dataInicial=01/01/2024&dataFinal=01/01/2025<br />
   - Fator diário Taxa Extramercado:<br />
-https://dadosabertos.bcb.gov.br/dataset/27803-sgs/resource/226d3f10-7d05-445d-a2a6-df62b7d48fd5<br />
-https://api.bcb.gov.br/dados/serie/bcdata.sgs.27803/dados?formato=json&dataInicial=01/01/2024&dataFinal=01/01/2025<br />
+    - website: https://dadosabertos.bcb.gov.br/dataset/27803-sgs/resource/226d3f10-7d05-445d-a2a6-df62b7d48fd5<br />
+    - api example: https://api.bcb.gov.br/dados/serie/bcdata.sgs.27803/dados?formato=json&dataInicial=01/01/2024&dataFinal=01/01/2025<br />
 
 
 - Inflation Indices<br />
