@@ -30,7 +30,7 @@ async function downloadLargeDataset(seriesCode, startYear, endYear) {
   fs.writeFileSync(`series_${seriesCode}.json`, JSON.stringify(allData, null, 2));
 };
 
-downloadLargeDataset(11, 2000, 2025);
+downloadLargeDataset(21620, 2022, 2023);
 
 
 /*

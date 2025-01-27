@@ -36,10 +36,51 @@ This metadata follows specific codes for each indicator avaiable, here they are 
 
 - Inflation Indices<br />
 
-https://dadosabertos.bcb.gov.br/organization/depec?q=ipca&sort=score+desc%2C+metadata_modified+desc
+  - IPCA Duráveis:<br />
+    - website: https://dadosabertos.bcb.gov.br/dataset/10843-indice-de-precos-ao-consumidor-amplo-ipca---duraveis<br />
+    - api example: https://api.bcb.gov.br/dados/serie/bcdata.sgs.10843/dados?formato=json&dataInicial=01/01/2024&dataFinal=01/01/2025<br />
+  - IPCA Serviços:<br />
+    - website: https://dadosabertos.bcb.gov.br/dataset/10844-indice-de-precos-ao-consumidor-amplo-ipca---servicos<br />
+    - api example: https://api.bcb.gov.br/dados/serie/bcdata.sgs.10844/dados?formato=json&dataInicial=01/01/2024&dataFinal=01/01/2025<br />
+  - IPCA Comercializáveis:<br />
+    - website: https://dadosabertos.bcb.gov.br/dataset/4447-indice-nacional-de-precos-ao-consumidor-amplo-ipca---comercializaveis<br />
+    - api example: https://api.bcb.gov.br/dados/serie/bcdata.sgs.4447/dados?formato=json&dataInicial=01/01/2024&dataFinal=01/01/2025<br />
+  - IPCA Não Comercializáveis:<br />
+    - website: https://dadosabertos.bcb.gov.br/dataset/4448-indice-de-precos-ao-consumidor-amplo-ipca---nao-comercializaveis<br />
+    - api example: https://api.bcb.gov.br/dados/serie/bcdata.sgs.4448/dados?formato=json&dataInicial=01/01/2024&dataFinal=01/01/2025<br />
+  - IPCA Bens não duráveis:<br />
+    - website: https://dadosabertos.bcb.gov.br/dataset/10841-indice-de-precos-ao-consumidor-amplo-ipca---bens-nao-duraveis<br />
+    - api example: https://api.bcb.gov.br/dados/serie/bcdata.sgs.10841/dados?formato=json&dataInicial=01/01/2024&dataFinal=01/01/2025<br />
+  - IPCA Bens semi duráveis:<br />
+    - website: https://dadosabertos.bcb.gov.br/dataset/10842-indice-de-precos-ao-consumidor-amplo-ipca---bens-semi-duraveis<br />
+    - api example: https://api.bcb.gov.br/dados/serie/bcdata.sgs.10842/dados?formato=json&dataInicial=01/01/2024&dataFinal=01/01/2025<br />
+  - IPCA Ítens livres:<br />
+    - website: https://dadosabertos.bcb.gov.br/dataset/11428-indice-nacional-de-precos-ao-consumidor---amplo-ipca---itens-livres<br />
+    - api example: https://api.bcb.gov.br/dados/serie/bcdata.sgs.11428/dados?formato=json&dataInicial=01/01/2024&dataFinal=01/01/2025<br />
+  - IPCA Preços monitorados TOTAL:<br />
+    - website: https://dadosabertos.bcb.gov.br/dataset/4449-indice-nacional-de-precos-ao-consumidor-amplo-ipca---precos-monitorados---total<br />
+    - api example: https://api.bcb.gov.br/dados/serie/bcdata.sgs.4449/dados?formato=json&dataInicial=01/01/2024&dataFinal=01/01/2025<br />
+  - IPCA Índice de difusão:<br />
+    - website: https://dadosabertos.bcb.gov.br/dataset/21379-indice-nacional-de-precos-ao-consumidor-amplo-ipca---indice-de-difusao<br />
+    - api example: https://api.bcb.gov.br/dados/serie/bcdata.sgs.21379/dados?formato=json&dataInicial=01/01/2024&dataFinal=01/01/2025<br />
+  - IPCA Núcleo de dupla ponderação:<br />
+    - website: https://dadosabertos.bcb.gov.br/dataset/16122-indice-nacional-de-precos-ao-consumidor---amplo-ipca---nucleo-de-dupla-ponderacao<br />
+    - api example: https://api.bcb.gov.br/dados/serie/bcdata.sgs.16122/dados?formato=json&dataInicial=01/01/2024&dataFinal=01/01/2025<br />
+  - IPCA Núcleo por exclusão:<br />
+    - website: https://dadosabertos.bcb.gov.br/dataset/16121-indice-nacional-de-precos-ao-consumidor---amplo-ipca---nucleo-por-exclusao---ex2<br />
+    - api example: https://api.bcb.gov.br/dados/serie/bcdata.sgs.16121/dados?formato=json&dataInicial=01/01/2024&dataFinal=01/01/2025<br />
+  - IPCA Números médias aparadas com suavização:<br />
+    - website: https://dadosabertos.bcb.gov.br/dataset/4466-indice-nacional-de-precos-ao-consumidor-amplo-ipca---nucleo-medias-aparadas-com-suavizacao<br />
+    - api example: https://api.bcb.gov.br/dados/serie/bcdata.sgs.4466/dados?formato=json&dataInicial=01/01/2024&dataFinal=01/01/2025<br />
+  - IPCA Núcleo médias aparadas sem suavização:<br />
+    - website: https://dadosabertos.bcb.gov.br/dataset/11426-indice-nacional-de-precos-ao-consumidor---amplo-ipca---nucleo-medias-aparadas-sem-suavizacao<br />
+    - api example: https://api.bcb.gov.br/dados/serie/bcdata.sgs.11426/dados?formato=json&dataInicial=01/01/2024&dataFinal=01/01/2025<br />
+  - IPCA Núcleo por exclusão Sem monitorados:<br />
+    - website: https://dadosabertos.bcb.gov.br/dataset/11427-indice-nacional-de-precos-ao-consumidor---amplo-ipca---nucleo-por-exclusao---sem-monitorados-<br />
+    - api example: https://api.bcb.gov.br/dados/serie/bcdata.sgs.11427/dados?formato=json&dataInicial=01/01/2024&dataFinal=01/01/2025<br />
 
 
-- Exchange Rates<br />
+- Exchange Rates - TO BE UPDATED<br />
 
 https://opendata.bcb.gov.br/dataset/exchange-rates-daily-bulletins/resource/425c2538-be53-49aa-b607-fbe904804364
 https://olinda.bcb.gov.br/olinda/service/PTAX/version/v1/documentation
@@ -48,40 +89,40 @@ https://olinda.bcb.gov.br/olinda/service/PTAX/version/v1/documentation
   - 21620 - EUR/BRL Exchange Rate: The exchange rate for the Euro against the Brazilian real.<br />
   - 13621 - Currency Basket: Weighted average exchange rate of a currency basket.<br />
 
-- Monetary Aggregates<br />
+- Monetary Aggregates - TO BE UPDATED<br />
 
   - 27831 - M1: Money supply consisting of currency in circulation and demand deposits.<br />
   - 27832 - M2: Includes M1 plus savings accounts and term deposits.<br />
   - 27833 - M3: M2 plus marketable securities issued by financial institutions.<br />
 
-- Public Finances<br />
+- Public Finances - TO BE UPDATED<br />
 
   - 13762 - Public Debt/GDP Ratio: Government debt as a percentage of GDP.<br />
   - 14212 - Primary Budget Surplus: Government savings before interest payments.<br />
   - 14029 - Nominal Deficit: Budget deficit including interest payments.<br />
 
-- Foreign Sector<br />
+- Foreign Sector - TO BE UPDATED<br />
 
   - 22662 - Trade Balance: Exports minus imports for Brazil.<br />
   - 22663 - Current Account Balance: Includes trade balance, net income, and transfer payments.<br />
   - 22664 - Foreign Direct Investment: Investments made by foreign entities in Brazil.<br />
 
-- Economic Activity<br />
+- Economic Activity - TO BE UPDATED<br />
 
   - 24363 - IBC-Br Index: A monthly proxy for GDP, reflecting economic activity.<br />
   - 24364 - Unemployment Rate: Percentage of the labor force that is unemployed.<br />
 
-- Market Indicators<br />
+- Market Indicators - TO BE UPDATED<br />
 
   - 22066 - Bovespa Index: The main stock market index in Brazil.<br />
   - 26017 - Risk Premium: Measure of risk perception for Brazilian assets.<br />
 
-- Credit and Loans<br />
+- Credit and Loans - TO BE UPDATED<br />
 
   - 20439 - Average Loan Interest Rate: The average rate charged by banks on loans.<br />
   - 20440 - Default Rate: The percentage of loans in default.<br />
 
-- Commodities<br />
+- Commodities - TO BE UPDATED<br />
 
   - 22358 - Commodity Price Index: Prices of commodities important to the Brazilian economy.<br />
   - 24365 - Oil Prices: Average price of crude oil.<br /><br />
