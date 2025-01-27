@@ -17,17 +17,32 @@ This metadata follows specific codes for each indicator avaiable, here they are 
 
 - Interest Rates<br />
 
-  - 4189 - SELIC Rate: The basic interest rate of the Brazilian economy, used for monetary policy.<br />
-  - 4188 - Overnight Interbank Deposit Rate: The effective daily rate for interbank overnight deposits.<br />
-  - 1178 - CDI: Interbank Certificate of Deposit rate, commonly used as a reference in investments.<br />
+  - Taxa de Juros:<br />
+https://dadosabertos.bcb.gov.br/dataset/11-taxa-de-juros---selic/resource/b73edc07-bbac-430c-a2cb-b1639e605fa8<br />
+https://api.bcb.gov.br/dados/serie/bcdata.sgs.11/dados?formato=json&dataInicial=01/01/2024&dataFinal=01/01/2025<br />
+  - Taxa de Juros anualizada base 252:<br />
+https://dadosabertos.bcb.gov.br/dataset/1178-taxa-de-juros---selic-anualizada-base-252/resource/e7fe6edb-d6c3-49b1-a7ef-6e0e98b63270<br />
+https://api.bcb.gov.br/dados/serie/bcdata.sgs.1178/dados?formato=json&dataInicial=01/01/2024&dataFinal=01/01/2025<br />
+  - Taxa de Juros acumulada no mês:<br />
+https://dadosabertos.bcb.gov.br/dataset/4390-taxa-de-juros---selic-acumulada-no-mes/resource/449efbb5-366b-4907-820f-8143a63733e1<br />
+https://api.bcb.gov.br/dados/serie/bcdata.sgs.4390/dados?formato=json&dataInicial=01/01/2024&dataFinal=01/01/2025<br />
+  - Taxa de Juros acumulada no mês anualizada base 252:<br />
+https://dadosabertos.bcb.gov.br/dataset/4189-taxa-de-juros---selic-acumulada-no-mes-anualizada-base-252/resource/091e3cb3-4dca-488b-a89d-6c9bb56c9a99<br />
+https://api.bcb.gov.br/dados/serie/bcdata.sgs.4189/dados?formato=json&dataInicial=01/01/2024&dataFinal=01/01/2025<br />
+  - Fator diário Taxa Extramercado:<br />
+https://dadosabertos.bcb.gov.br/dataset/27803-sgs/resource/226d3f10-7d05-445d-a2a6-df62b7d48fd5<br />
+https://api.bcb.gov.br/dados/serie/bcdata.sgs.27803/dados?formato=json&dataInicial=01/01/2024&dataFinal=01/01/2025<br />
+
 
 - Inflation Indices<br />
 
-  - 433 - IPCA: The National Consumer Price Index, the official inflation indicator in Brazil.<br />
-  - 188 - INPC: National Consumer Price Index for lower-income families.<br />
-  - 189 - IGP-M: General Market Price Index, widely used for rent adjustments.<br />
+https://dadosabertos.bcb.gov.br/organization/depec?q=ipca&sort=score+desc%2C+metadata_modified+desc
+
 
 - Exchange Rates<br />
+
+https://opendata.bcb.gov.br/dataset/exchange-rates-daily-bulletins/resource/425c2538-be53-49aa-b607-fbe904804364
+https://olinda.bcb.gov.br/olinda/service/PTAX/version/v1/documentation
 
   - 3695 - USD/BRL Exchange Rate: The exchange rate for the US dollar against the Brazilian real.<br />
   - 21620 - EUR/BRL Exchange Rate: The exchange rate for the Euro against the Brazilian real.<br />
@@ -70,6 +85,7 @@ This metadata follows specific codes for each indicator avaiable, here they are 
 
   - 22358 - Commodity Price Index: Prices of commodities important to the Brazilian economy.<br />
   - 24365 - Oil Prices: Average price of crude oil.<br /><br />
+
 
 ### Yahoo Finance API
 This API brings the day by day stock indicator but there are two main options to use, the "historical" and the "chart" components.<br />

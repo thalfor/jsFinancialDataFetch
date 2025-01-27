@@ -3,28 +3,37 @@ const axios = require('axios');
 const fs = require('fs');
 const yahooFinance = require('yahoo-finance2').default;
 
-/*
+
+function formatDate(year, month, day) {
+  return `${day.toString().padStart(2, '0')}/${month.toString().padStart(2, '0')}/${year}`;
+};
+
 async function fetchBACENData(seriesCode, startDate, endDate) {
   const url = `https://api.bcb.gov.br/dados/serie/bcdata.sgs.${seriesCode}/dados?formato=json&dataInicial=${startDate}&dataFinal=${endDate}`;
   const response = await axios.get(url);
   return response.data;
-}
+};
 
 async function downloadLargeDataset(seriesCode, startYear, endYear) {
   let allData = [];
   for (let year = startYear; year <= endYear; year++) {
-    const startDate = `${year}-01-01`;
-    const endDate = `${year}-12-31`;
-    const yearlyData = await fetchBACENData(seriesCode, startDate, endDate);
-    allData = allData.concat(yearlyData);
-  }
+    const startDate = formatDate(year, 1, 1);
+    const endDate = formatDate(year, 12, 31);
+    console.log(`Fetching data for series ${seriesCode} of ${year}`);
+    try {
+      const yearlyData = await fetchBACENData(seriesCode, startDate, endDate);
+      allData = allData.concat(yearlyData);
+    } catch (err) {
+      console.error(`Failed to fetch data for year ${year}. Skipping...`)
+    }
+  };
   fs.writeFileSync(`series_${seriesCode}.json`, JSON.stringify(allData, null, 2));
-}
+};
 
-downloadLargeDataset(433, 2000, 2023);
-*/
+downloadLargeDataset(11, 2000, 2025);
 
 
+/*
 async function getBrazilStockData(symbol) {
 
 // using historical
@@ -52,6 +61,6 @@ async function getBrazilStockData(symbol) {
 }
 
 getBrazilStockData('PETR4.SA'); // Petrobras stock data
-
+*/
 
 //
