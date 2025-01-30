@@ -1,7 +1,6 @@
 //
 const yahooFinance = require('yahoo-finance2').default;
-const fs = require('fs');
-const path = require('path');
+const knex = require('../database');
 
 async function getBrazilStockData(symbol, startPeriod) {
 
@@ -32,12 +31,31 @@ async function getBrazilStockData(symbol, startPeriod) {
   finalObject.high = result.indicators.quote[0].high;
   finalObject.close = result.indicators.quote[0].close;
 
-  const folderPath = path.resolve(__dirname, '../../db');
-  if (!fs.existsSync(folderPath)) {
-    fs.mkdirSync(folderPath);
-  }
-  const filePath = path.join(folderPath, `stock_${symbol}.json`);
-  fs.writeFileSync(filePath, JSON.stringify(finalObject, null, 2));
+  const rowsDB = finalObject.dates.map((date, index) => ({
+
+    stockTicker: finalObject.stockTicker,
+    date: date,
+    volume: finalObject.volume[index],
+    open: finalObject.open[index],
+    low: finalObject.low[index],
+    high: finalObject.high[index],
+    close: finalObject.close[index],
+
+  }));
+
+  await knex('db-stocksHistory')
+    .insert(rowsDB)
+    .then(() => {
+      console.log(`successfully inserted data for stockTicker ${symbol}`);
+    })
+    .catch((error) => {
+      console.error(`error inserting data for stockTicker ${symbol}: ${error}`);
+    })
+    .finally(() => {
+      knex.destroy();
+    });
+
+  
 };
 //
 //
