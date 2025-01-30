@@ -129,6 +129,9 @@ https://olinda.bcb.gov.br/olinda/service/PTAX/version/v1/documentation
 
 
 ### Yahoo Finance API
+
+https://www.infomoney.com.br/cotacoes/empresas-b3/
+
 This API brings the day by day stock indicator but there are two main options to use, the "historical" and the "chart" components.<br />
 The main difference between both is that the "historical" is much simpler, however is not that complete, and the "chart" is super complete, but quite complex.<br /><br />
 - historical code with data from '2025-01-20' untill today:<br />
