@@ -8,7 +8,8 @@ const arrayIndicators = [
   // SELIC
   11,1178,4390,4189,27803,
   // IPCA
-  10843,10844,4447,4448,10841,10842,11428,4449,21379,16122,16121,4466,11426,11427,
+  10843,10844,4447,4448,10841,10842,11428,4449,21379,16122,16121,4466,11426,11427
+  /*
   // Exchange Rates - TO BE UPDATED
   3695,21620,13621,
   // Monetary Aggregates - TO BE UPDATED
@@ -25,10 +26,13 @@ const arrayIndicators = [
   20439,20440,
   // Commodities - TO BE UPDATED
   22358,24365
+  */
 ];
-financialIndicatorsLoopFunction(arrayIndicators, 2023, 2025)
+/*
+financialIndicatorsLoopFunction(arrayIndicators, 2000, 2025)
   .then(() => console.log(`all indicators processed.`))
   .catch(() => console.error(`error, check function.`));
+*/
 //
 //
 //  
@@ -61,7 +65,7 @@ const arrayStocks = [
   'TUPY3.SA','UCAS3.SA','UGPA3.SA','UNIP3.SA','UNIP5.SA','UNIP6.SA','USIM3.SA','USIM5.SA','USIM6.SA','VALE3.SA','VAMO3.SA','VBBR3.SA','VITT3.SA','VIVA3.SA','VIVR3.SA',
   'VIVT3.SA','VLID3.SA','VSTE3.SA','VTRU3.SA','VULC3.SA','VVEO3.SA','WEGE3.SA','WEST3.SA','WHRL3.SA','WHRL4.SA','WIZC3.SA','WLMM3.SA','WLMM4.SA','YDUQ3.SA','ZAMP3.SA'*/
 ];
-stocksLoopFunction(arrayStocks, '2025-01-20')
+stocksLoopFunction(arrayStocks, '2000-01-20')
   .then(() => console.log(`all ticker processed.`))
   .catch(() => console.error(`error, check function.`));
 //
