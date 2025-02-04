@@ -65,7 +65,7 @@ const arrayStocks = [
   'TUPY3.SA','UCAS3.SA','UGPA3.SA','UNIP3.SA','UNIP5.SA','UNIP6.SA','USIM3.SA','USIM5.SA','USIM6.SA','VALE3.SA','VAMO3.SA','VBBR3.SA','VITT3.SA','VIVA3.SA','VIVR3.SA',
   'VIVT3.SA','VLID3.SA','VSTE3.SA','VTRU3.SA','VULC3.SA','VVEO3.SA','WEGE3.SA','WEST3.SA','WHRL3.SA','WHRL4.SA','WIZC3.SA','WLMM3.SA','WLMM4.SA','YDUQ3.SA','ZAMP3.SA'*/
 ];
-stocksLoopFunction(arrayStocks, '2025-01-01')
+stocksLoopFunction(arrayStocks, '2025-01-20')
   .then(() => console.log(`all ticker processed.`))
   .catch(() => console.error(`error, check function.`));
 //

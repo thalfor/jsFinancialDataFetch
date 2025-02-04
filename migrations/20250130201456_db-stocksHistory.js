@@ -3,7 +3,7 @@
  * @returns { Promise<void> }
  */
 exports.up = async function(knex) {
-  await knex.schema.createTable('db-stocksHistory', (table) => {
+  await knex.schema.createTable('dbStocksHistory', (table) => {
     table.increments('primaryID').primary();
     table.string('stockTicker');
     table.datetime('date');
@@ -20,5 +20,5 @@ exports.up = async function(knex) {
  * @returns { Promise<void> }
  */
 exports.down = async function(knex) {
-  await knex.schema.dropTable('db-stocksHistory');
+  await knex.schema.dropTable('dbStocksHistory');
 };

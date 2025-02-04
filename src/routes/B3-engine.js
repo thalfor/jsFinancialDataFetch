@@ -43,7 +43,7 @@ async function getBrazilStockData(symbol, startPeriod) {
 
   }));
 
-  await knex('db-stocksHistory')
+  await knex('dbStocksHistory')
     .insert(rowsDB)
     .then(() => {
       console.log(`successfully inserted data for stockTicker ${symbol}`);
