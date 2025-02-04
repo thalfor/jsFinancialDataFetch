@@ -58,8 +58,6 @@ async function getBrazilStockData(symbol, startPeriod) {
     }
   };
 
-  knex.destroy();
-  
 };
 //
 //
@@ -74,6 +72,7 @@ async function stocksLoopFunction(stockArray, startPeriod){
       console.error(`Failed to download stock: ${stock}`);
     }
   };
+  knex.destroy();
 
 };
 
