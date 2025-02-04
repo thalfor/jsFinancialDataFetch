@@ -5,6 +5,7 @@
 exports.up = async function(knex) {
   await knex.schema.createTable('dbStocksHistory', (table) => {
     table.increments('primaryID').primary();
+    table.unique(['stockTicker', 'date']);
     table.string('stockTicker');
     table.datetime('date');
     table.float('volume');

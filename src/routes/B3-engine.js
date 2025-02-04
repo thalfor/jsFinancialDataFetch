@@ -34,7 +34,7 @@ async function getBrazilStockData(symbol, startPeriod) {
   const rowsDB = finalObject.dates.map((date, index) => ({
 
     stockTicker: finalObject.stockTicker,
-    date: date,
+    date: new Date(date).toISOString(),
     volume: finalObject.volume[index],
     open: finalObject.open[index],
     low: finalObject.low[index],
@@ -43,18 +43,22 @@ async function getBrazilStockData(symbol, startPeriod) {
 
   }));
 
-  await knex('dbStocksHistory')
-    .insert(rowsDB)
-    .then(() => {
-      console.log(`successfully inserted data for stockTicker ${symbol}`);
-    })
-    .catch((error) => {
-      console.error(`error inserting data for stockTicker ${symbol}: ${error}`);
-    })
-    .finally(() => {
-      knex.destroy();
-    });
+  const chunkSize = 100;
 
+  for (let i = 0; i < rowsDB.length; i += chunkSize) {
+    const chunk = rowsDB.slice(i, i + chunkSize);
+    try {
+      await knex('dbStocksHistory')
+        .insert(chunk)
+        .onConflict(['stockTicker', 'date'])
+        .ignore();        
+      console.log(`inserted chunk ${i / chunkSize + 1} for stock ${symbol}`);
+    } catch (error) {
+      console.error(`error inserting chunk ${i / chunkSize + 1} for stock ${symbol}. error: ${error}`);
+    }
+  };
+
+  knex.destroy();
   
 };
 //
