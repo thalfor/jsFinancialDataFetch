@@ -7,5 +7,5 @@ const arrayBacenIndicators = require('./arrays/BACEN');
 //
 const { stocksLoopFunction } = require('./functions/B3-engine');
 const arrayStocks = require('./arrays/B3');
-stocksLoopFunction(arrayStocks, '2000-01-20').then(() => console.log(`all ticker processed.`)).catch(() => console.error(`error, check function.`));
+//stocksLoopFunction(arrayStocks, '2000-01-20').then(() => console.log(`all ticker processed.`)).catch(() => console.error(`error, check function.`));
 //
