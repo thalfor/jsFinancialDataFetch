@@ -80,57 +80,11 @@ This metadata follows specific codes for each indicator avaiable, here they are 
     - api example: https://api.bcb.gov.br/dados/serie/bcdata.sgs.11427/dados?formato=json&dataInicial=01/01/2024&dataFinal=01/01/2025<br />
 
 
-- Exchange Rates - TO BE UPDATED<br />
-
-https://opendata.bcb.gov.br/dataset/exchange-rates-daily-bulletins/resource/425c2538-be53-49aa-b607-fbe904804364
-https://olinda.bcb.gov.br/olinda/service/PTAX/version/v1/documentation
-
-  - 3695 - USD/BRL Exchange Rate: The exchange rate for the US dollar against the Brazilian real.<br />
-  - 21620 - EUR/BRL Exchange Rate: The exchange rate for the Euro against the Brazilian real.<br />
-  - 13621 - Currency Basket: Weighted average exchange rate of a currency basket.<br />
-
-- Monetary Aggregates - TO BE UPDATED<br />
-
-  - 27831 - M1: Money supply consisting of currency in circulation and demand deposits.<br />
-  - 27832 - M2: Includes M1 plus savings accounts and term deposits.<br />
-  - 27833 - M3: M2 plus marketable securities issued by financial institutions.<br />
-
-- Public Finances - TO BE UPDATED<br />
-
-  - 13762 - Public Debt/GDP Ratio: Government debt as a percentage of GDP.<br />
-  - 14212 - Primary Budget Surplus: Government savings before interest payments.<br />
-  - 14029 - Nominal Deficit: Budget deficit including interest payments.<br />
-
-- Foreign Sector - TO BE UPDATED<br />
-
-  - 22662 - Trade Balance: Exports minus imports for Brazil.<br />
-  - 22663 - Current Account Balance: Includes trade balance, net income, and transfer payments.<br />
-  - 22664 - Foreign Direct Investment: Investments made by foreign entities in Brazil.<br />
-
-- Economic Activity - TO BE UPDATED<br />
-
-  - 24363 - IBC-Br Index: A monthly proxy for GDP, reflecting economic activity.<br />
-  - 24364 - Unemployment Rate: Percentage of the labor force that is unemployed.<br />
-
-- Market Indicators - TO BE UPDATED<br />
-
-  - 22066 - Bovespa Index: The main stock market index in Brazil.<br />
-  - 26017 - Risk Premium: Measure of risk perception for Brazilian assets.<br />
-
-- Credit and Loans - TO BE UPDATED<br />
-
-  - 20439 - Average Loan Interest Rate: The average rate charged by banks on loans.<br />
-  - 20440 - Default Rate: The percentage of loans in default.<br />
-
-- Commodities - TO BE UPDATED<br />
-
-  - 22358 - Commodity Price Index: Prices of commodities important to the Brazilian economy.<br />
-  - 24365 - Oil Prices: Average price of crude oil.<br /><br />
 
 
 ### Yahoo Finance API
 
-https://www.infomoney.com.br/cotacoes/empresas-b3/
+i got the stocks tickers from here: https://www.infomoney.com.br/cotacoes/empresas-b3/<br /><br />
 
 This API brings the day by day stock indicator but there are two main options to use, the "historical" and the "chart" components.<br />
 The main difference between both is that the "historical" is much simpler, however is not that complete, and the "chart" is super complete, but quite complex.<br /><br />
