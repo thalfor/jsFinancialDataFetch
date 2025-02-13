@@ -31,7 +31,7 @@ This metadata follows specific codes for each indicator avaiable, here they are 
     - api example: https://api.bcb.gov.br/dados/serie/bcdata.sgs.4189/dados?formato=json&dataInicial=01/01/2024&dataFinal=01/01/2025<br />
   - Fator diário Taxa Extramercado:<br />
     - website: https://dadosabertos.bcb.gov.br/dataset/27803-sgs/resource/226d3f10-7d05-445d-a2a6-df62b7d48fd5<br />
-    - api example: https://api.bcb.gov.br/dados/serie/bcdata.sgs.27803/dados?formato=json&dataInicial=01/01/2024&dataFinal=01/01/2025<br />
+    - api example: https://api.bcb.gov.br/dados/serie/bcdata.sgs.27803/dados?formato=json&dataInicial=01/01/2024&dataFinal=01/01/2025<br /><br />
 
 
 - Inflation Indices<br />
@@ -77,8 +77,25 @@ This metadata follows specific codes for each indicator avaiable, here they are 
     - api example: https://api.bcb.gov.br/dados/serie/bcdata.sgs.11426/dados?formato=json&dataInicial=01/01/2024&dataFinal=01/01/2025<br />
   - IPCA Núcleo por exclusão Sem monitorados:<br />
     - website: https://dadosabertos.bcb.gov.br/dataset/11427-indice-nacional-de-precos-ao-consumidor---amplo-ipca---nucleo-por-exclusao---sem-monitorados-<br />
-    - api example: https://api.bcb.gov.br/dados/serie/bcdata.sgs.11427/dados?formato=json&dataInicial=01/01/2024&dataFinal=01/01/2025<br />
+    - api example: https://api.bcb.gov.br/dados/serie/bcdata.sgs.11427/dados?formato=json&dataInicial=01/01/2024&dataFinal=01/01/2025<br /><br />
 
+- Exchange Rate:<br />
+
+  - https://dadosabertos.bcb.gov.br/dataset/taxas-de-cambio-todos-os-boletins-diarios<br />
+  - URL (the date is awful): https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata/CotacaoMoedaPeriodo(moeda=@moeda,dataInicial=@dataInicial,dataFinalCotacao=@dataFinalCotacao)?@moeda='USD'&@dataInicial='02-05-2025'&@dataFinalCotacao='02-06-2025'&$top=100&$format=json&$select=cotacaoCompra,cotacaoVenda,dataHoraCotacao,tipoBoletim<br />
+  - URL result: {"cotacaoCompra":5.78500,"cotacaoVenda":5.78560,"dataHoraCotacao":"2025-02-06 13:08:27.966","tipoBoletim":"Fechamento"}<br />
+    - this also have the options "Abertura", "Intermediário" instead of "Fechamento".
+  - currencies:<br />
+    - coroa dinamarquesa (DKK) Tipo A<br />
+    - coroa norueguesa (NOK) Tipo A<br />
+    - coroa sueca (SEK) Tipo A<br />
+    - dólar americano (USD) Tipo A<br />
+    - dólar australiano (AUD) Tipo B<br />
+    - dólar canadense (CAD) Tipo A<br />
+    - euro (EUR) Tipo B<br />
+    - franco suíço (CHF) Tipo A<br />
+    - iene (JPY) Tipo A<br />
+    - libra esterlina (GBP) Tipo B<br /><br />
 
 
 
