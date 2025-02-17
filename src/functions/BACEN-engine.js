@@ -2,7 +2,7 @@
 const { error } = require('console');
 const { formatDateDMY } = require('./auxiliary/formatDateDMY.js');
 const { fetchDataSelicIPCA } = require('./auxiliary/fetchDataSelicIPCA.js');
-const knex = require('../database');
+const knex = require('../database.js');
 const { v4:uuidv4 } = require('uuid');
 const moment = require('moment');
 //
