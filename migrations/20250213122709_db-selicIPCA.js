@@ -5,7 +5,7 @@
 exports.up = async function(knex) {
   await knex.schema.createTable('db_SelicIPCA', (table) => {
     table.uuid('primaryID').primary();
-    table.unique(['indicator', 'date']);
+    table.unique(['code', 'date']);
     table.string('period');
     table.string('code');
     table.string('indicator');
