@@ -6,6 +6,7 @@ const knex = require('../database');
 async function insertSQL(){
 
   await knex('db_financialIndicators').insert([
+    { code: '1207', indicator: 'PIB', description: 'PIB', period: 'Y' }, 
     { code: '11', indicator: 'Selic', description: 'taxa de juros', period: 'D' }, 
     { code: '1178', indicator: 'Selic', description: 'anualizada base 252', period: 'D' }, 
     { code: '4189', indicator: 'Selic', description: 'acumulada no mês', period: 'M' }, 

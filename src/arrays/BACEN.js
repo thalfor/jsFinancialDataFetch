@@ -1,5 +1,7 @@
 //
 const arrayBACEN = [
+  // PIB
+  1207, 
   // SELIC
   11,1178,4390,4189,27803,
   // IPCA

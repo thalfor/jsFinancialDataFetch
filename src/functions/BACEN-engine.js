@@ -1,7 +1,7 @@
 //
 const { error } = require('console');
 const { formatDateDMY } = require('./auxiliary/formatDateDMY.js');
-const { fetchDataSelicIPCA } = require('./auxiliary/fetchDataSelicIPCA.js');
+const { fetchDataBACEN } = require('./auxiliary/fetchDataBACEN.js');
 const knex = require('../database.js');
 const { v4:uuidv4 } = require('uuid');
 const moment = require('moment');
@@ -14,7 +14,7 @@ async function downloadLargeDataset(seriesCode, startYear, endYear) {
     const endDate = formatDateDMY(year, 12, 31);
     console.log(`Fetching data for series ${seriesCode} of ${year}`);
     try {
-      const yearlyData = await fetchDataSelicIPCA(seriesCode, startDate, endDate);
+      const yearlyData = await fetchDataBACEN(seriesCode, startDate, endDate);
       allData = allData.concat(yearlyData);
     } catch (error) {
       console.error(`Failed to fetch data for year ${year}. Skipping...`)

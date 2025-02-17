@@ -7,13 +7,29 @@
 //
 //
 //
+
 const { loopFunctionSelicIPCA } = require('./functions/BACEN-engine');
 const arrayBACEN = require('./arrays/BACEN');
-loopFunctionSelicIPCA(arrayBACEN, 2000, 2025).then(() => console.log(`all indicators processed.`)).catch(() => console.error(`error, check function.`));
-//
-//
-//
-//const { stocksLoopFunction } = require('./functions/B3-engine');
-//const arrayStocks = require('./arrays/B3');
-//stocksLoopFunction(arrayStocks, '2000-01-20').then(() => console.log(`all ticker processed.`)).catch(() => console.error(`error, check function.`));
+const { stocksLoopFunction } = require('./functions/B3-engine');
+const arrayStocks = require('./arrays/B3');
+
+
+async function runEverything(){
+
+  try{
+    //BACEN
+    console.log(`processing BACEN`);
+    await loopFunctionSelicIPCA(arrayBACEN, 2000, 2025);
+    console.log(`processed BACEN!`);
+    //B3
+    console.log(`processing B3`);
+    await stocksLoopFunction(arrayStocks, '2025-02-01');
+    console.log(`processed B3!`);
+    
+  } catch(error) {
+    console.error(`error: ${error}`);
+  };
+};
+
+runEverything();
 //
